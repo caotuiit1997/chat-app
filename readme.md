@@ -20,17 +20,22 @@
 <br>
 #1: Install redis server
 <br>
+
 ```
 sudo apt-get install redis-server
 ```
+
 <br>
 #2: Install socket.io: please install version 1.7.4 for no more further conflict
 <br>
+
 ```
 npm install express redis socket.io:1.7.4
 ```
 <br>
+
 #3: Create file server.js to build a server
+
 ```
 var app = require('express')();
 var server = require('http').Server(app);
@@ -56,7 +61,9 @@ io.on('connection', function (socket) {
 });
 
 ```
+
 <b>To run server: use</b>
+
 ```
 node server.js
 ```
