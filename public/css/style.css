@@ -1,0 +1,23 @@
+.message-row {
+    padding: 5px 0px;
+}
+/* .message-box {
+    
+} */
+.sender {
+    color:red;
+}
+.receiver {
+    color: blue;
+}
+.sender-bubble {
+    border: 1px solid red;
+    border-radius: 20px;
+}
+.receiver-bubble {
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+.border-bottom {
+    border-bottom: 1px solid silver;
+}
