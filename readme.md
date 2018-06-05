@@ -1,25 +1,35 @@
 <h1>Build laravel chat application</h1>
 <hr>
 <b>Source has been inhanced, please follow the guideline below</b>
+<br>
+
 #My Operating system: Linux ubuntu 14.6
 
 #Make sure you have all those requirements.
+<br>
 -Nodejs (v8.11.2)
+<br>
 -Composer
+<br>
 -Php version 7
+<br>
 
 #For the database, I use Mongodb for this project, but you can use mysql
-
+<br>
 <h2>Set up environment</h2>
+<br>
 #1: Install redis server
+<br>
 ```
 sudo apt-get install redis-server
 ```
+<br>
 #2: Install socket.io: please install version 1.7.4 for no more further conflict
+<br>
 ```
 npm install express redis socket.io:1.7.4
 ```
-
+<br>
 #3: Create file server.js to build a server
 ```
 var app = require('express')();
@@ -160,5 +170,7 @@ Route::get('writemessage', 'SocketController@writemessage');
 <h1><b>To run and test</b></h1>
 
 #Run node server: node server.js
+<br>
 #Run laravel project: php artisan serve
+<br>
 #Open two browser: one is open localhost/writemessage and one is open localhost/socket
